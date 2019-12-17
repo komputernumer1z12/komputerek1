@@ -1,0 +1,34 @@
+#include<iostream>
+#include<cmath>
+#include<cstdlib>
+#include <time.h>
+#include <windows.h>
+using namespace std;
+
+int i;
+
+    struct sprinter { 
+    char imie[15];
+    char nazwisko[25];
+    float czas;
+	}Sprinter;
+	
+int main()
+{
+	struct sprinter tab[3];
+//-----------------------------------
+ for( i = 0; i < 2; i++ ){
+         
+        cout<<"Podaj imie ";
+        fflush(stdin);
+		gets(tab[i].imie);
+         
+     }
+ for(int x=0;x<=i;x++) {
+    cout<< tab[x].imie << "\n";
+ }
+ system("pause");
+    return 0;
+}
+
+
